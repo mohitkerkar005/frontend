@@ -1,0 +1,113 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif; /* Set a default font */
+  background-color: #f4f4f4; /* Light background color */
+}
+
+/* Navigation Panel Styling */
+.sidebar {
+  position: fixed; /* Fixed positioning to keep it on the left */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height of the viewport */
+  width: 250px; /* Width of the sidebar */
+  background-color: #333; /* Dark background color */
+  color: white;
+  padding: 20px;
+  overflow: auto; /* Adds scroll if the content exceeds the height */
+}
+
+.sidebar .nav-list {
+  list-style: none; /* Remove bullet points */
+}
+
+.sidebar .nav-list li {
+  margin: 15px 0; /* Space between menu items */
+}
+
+.sidebar .nav-list a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px;
+}
+
+.sidebar .nav-list a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styling */
+.content {
+  margin-left: 270px; /* Offset content by the width of the sidebar */
+  padding: 20px;
+  color: black;
+}
+
+.content section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+/* Document Container */
+.document-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to next line */
+  gap: 20px; /* Space between blocks */
+  justify-content: center; /* Center blocks horizontally */
+}
+
+/* Document Block Styling */
+.document-block {
+  background-color: white; /* Background color for the block */
+  border: 1px solid #ddd; /* Border for the block */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside the block */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: 250px; /* Fixed width for each block */
+  text-align: left; /* Align text to the left */
+}
+
+.document-block a {
+  color: #333; /* Text color inside the block */
+  text-decoration: none; /* Remove underline */
+}
+
+.document-block a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.document-block h2 {
+  font-size: 1.2em; /* Slightly larger font for headings */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.document-block p {
+  margin: 5px 0; /* Space above and below paragraphs */
+}
+
+/* My Details Container */
+.my-details-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  position: fixed;
+  background-color: gray;
+  color: white;
+  width: 300px;
+  text-align: center;
+  z-index: 1000; /* Ensure it appears on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
